@@ -59,6 +59,7 @@ func (s *Server) start() error {
 
 	s.fileServer(s.r)
 
+	fmt.Println("please open your browser at \n\t\thttp://localhost:8081/")
 	return http.ListenAndServe(":8081", s.r)
 }
 
